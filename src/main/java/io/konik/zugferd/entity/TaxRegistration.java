@@ -23,8 +23,8 @@ import io.konik.zugferd.unece.codes.Reference;
 import io.konik.zugferd.unqualified.ID;
 
 import javax.validation.constraints.NotNull;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlType;
 import java.io.Serializable;
 
 import static io.konik.util.Strings.isNotEmpty;

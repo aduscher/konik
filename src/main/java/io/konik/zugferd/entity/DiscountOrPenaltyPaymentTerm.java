@@ -24,8 +24,8 @@ import io.konik.zugferd.unqualified.Measure;
 import io.konik.zugferd.unqualified.ZfDate;
 
 import javax.validation.Valid;
-import javax.xml.bind.annotation.XmlTransient;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlTransient;
+import jakarta.xml.bind.annotation.XmlType;
 import java.io.Serializable;
 import java.math.BigDecimal;
 

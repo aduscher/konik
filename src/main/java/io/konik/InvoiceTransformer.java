@@ -19,12 +19,12 @@ package io.konik;
 
 import io.konik.exception.TransformationException;
 import io.konik.zugferd.Invoice;
+import jakarta.xml.bind.*;
 import org.xml.sax.SAXException;
 
 import javax.inject.Named;
 import javax.inject.Singleton;
 import javax.xml.XMLConstants;
-import javax.xml.bind.*;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
@@ -33,8 +33,8 @@ import java.io.*;
 import java.net.URL;
 import java.util.logging.Logger;
 
+import static jakarta.xml.bind.JAXBContext.newInstance;
 import static java.util.logging.Level.WARNING;
-import static javax.xml.bind.JAXBContext.newInstance;
 
 /**
  * Transforms invoices from one representation to another. In other words marshaling and unmarshalling.

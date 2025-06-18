@@ -17,8 +17,8 @@
  */
 package io.konik.zugferd.entity;
 
-import javax.xml.bind.annotation.XmlTransient;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlTransient;
+import jakarta.xml.bind.annotation.XmlType;
 import java.io.Serializable;
 import java.util.List;
 

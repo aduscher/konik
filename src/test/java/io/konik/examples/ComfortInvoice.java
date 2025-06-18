@@ -36,6 +36,8 @@ import org.xml.sax.SAXException;
 
 import javax.xml.transform.stream.StreamSource;
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 import static com.neovisionaries.i18n.CountryCode.DE;
 import static com.neovisionaries.i18n.CurrencyCode.EUR;
@@ -44,7 +46,6 @@ import static io.konik.zugferd.profile.ConformanceLevel.COMFORT;
 import static io.konik.zugferd.unece.codes.DocumentCode._380;
 import static io.konik.zugferd.unece.codes.Reference.FC;
 import static io.konik.zugferd.unece.codes.UnitOfMeasurement.UNIT;
-import static org.apache.commons.io.FileUtils.openOutputStream;
 import static org.apache.commons.lang3.time.DateUtils.addDays;
 import static org.apache.commons.lang3.time.DateUtils.addMonths;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -92,7 +93,7 @@ public class ComfortInvoice {
 
    public void transformModelAndWriteToDisk(Invoice invoice) throws IOException {
       InvoiceTransformer transformer = new PrittyPrintInvoiceTransformer(); // <1>
-      FileOutputStream outputStream = openOutputStream(new File("build/test-results/pdfs/all-element-invoice.xml"));
+      OutputStream outputStream = Files.newOutputStream(Path.of("build/test-results/pdfs/all-element-invoice.xml"));
       transformer.fromModel(invoice, outputStream); // <2>
    }
 

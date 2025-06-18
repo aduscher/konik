@@ -21,7 +21,7 @@ import com.neovisionaries.i18n.CountryCode;
 import io.konik.jaxb.bindable.entity.TradeCountry;
 import io.konik.util.Strings;
 
-import javax.xml.bind.annotation.adapters.XmlAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 

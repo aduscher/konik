@@ -22,10 +22,10 @@ import io.konik.zugferd.entity.Context;
 import io.konik.zugferd.entity.Header;
 import io.konik.zugferd.entity.trade.Trade;
 import io.konik.zugferd.profile.ConformanceLevel;
+import jakarta.xml.bind.annotation.*;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
-import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 
 /**

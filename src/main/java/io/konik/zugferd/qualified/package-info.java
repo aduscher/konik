@@ -23,5 +23,5 @@
       @XmlNs(prefix = "qdt", namespaceURI = "urn:un:unece:uncefact:data:standard:QualifiedDataType:12") })
 package io.konik.zugferd.qualified;
 
-import javax.xml.bind.annotation.XmlNs;
-import javax.xml.bind.annotation.XmlSchema;
+import jakarta.xml.bind.annotation.XmlNs;
+import jakarta.xml.bind.annotation.XmlSchema;

@@ -20,7 +20,7 @@ package io.konik.jaxb.adapter;
 import io.konik.jaxb.bindable.entity.DueDatePeriod;
 import io.konik.zugferd.unqualified.ZfDate;
 
-import javax.xml.bind.annotation.adapters.XmlAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 

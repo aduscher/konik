@@ -19,7 +19,7 @@ package io.konik.jaxb.bindable.unqualified;
 
 import io.konik.Configuration;
 
-import javax.xml.bind.annotation.adapters.XmlAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 

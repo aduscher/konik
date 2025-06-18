@@ -17,7 +17,7 @@
  */
 package io.konik.zugferd.unece.codes;
 
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlType;
 
 /**
  * = The Tax Category Code.

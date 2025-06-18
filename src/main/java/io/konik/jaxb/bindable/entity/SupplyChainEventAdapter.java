@@ -20,7 +20,7 @@ package io.konik.jaxb.bindable.entity;
 
 import io.konik.zugferd.unqualified.ZfDate;
 
-import javax.xml.bind.annotation.adapters.XmlAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 
 /**
  * = The CountryAdapter maps the JaxB trade countries to the Enum ZfDate.

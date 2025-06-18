@@ -17,7 +17,7 @@
  */
 package io.konik.jaxb.bindable.entity;
 
-import javax.xml.bind.annotation.adapters.XmlAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 
 /**
  * = The Accounting Account to String Id Adapter.

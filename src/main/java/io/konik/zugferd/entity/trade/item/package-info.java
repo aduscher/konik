@@ -28,11 +28,11 @@ package io.konik.zugferd.entity.trade.item;
 import io.konik.jaxb.adapter.TwoDigitRoundingAdapter;
 import io.konik.zugferd.unqualified.Amount;
 
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlNs;
-import javax.xml.bind.annotation.XmlSchema;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapters;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlNs;
+import jakarta.xml.bind.annotation.XmlSchema;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapters;
 
-import static javax.xml.bind.annotation.XmlAccessType.NONE;
-import static javax.xml.bind.annotation.XmlNsForm.QUALIFIED;
+import static jakarta.xml.bind.annotation.XmlAccessType.NONE;
+import static jakarta.xml.bind.annotation.XmlNsForm.QUALIFIED;

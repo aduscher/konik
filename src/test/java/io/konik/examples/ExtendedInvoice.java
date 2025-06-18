@@ -30,10 +30,11 @@ import org.junit.Test;
 import org.xml.sax.SAXException;
 
 import javax.xml.transform.stream.StreamSource;
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 import static com.neovisionaries.i18n.CountryCode.DE;
 import static com.neovisionaries.i18n.CurrencyCode.EUR;
@@ -42,7 +43,6 @@ import static io.konik.zugferd.profile.ConformanceLevel.EXTENDED;
 import static io.konik.zugferd.unece.codes.DocumentCode._380;
 import static io.konik.zugferd.unece.codes.Reference.FC;
 import static io.konik.zugferd.unece.codes.UnitOfMeasurement.UNIT;
-import static org.apache.commons.io.FileUtils.openOutputStream;
 import static org.apache.commons.lang3.time.DateUtils.addDays;
 import static org.apache.commons.lang3.time.DateUtils.addMonths;
 
@@ -88,7 +88,7 @@ public class ExtendedInvoice {
 
    public void createXmlFromModel(Invoice invoice) throws IOException {
       InvoiceTransformer transformer = new InvoiceTransformer(); // <1>
-      FileOutputStream outputStream = openOutputStream(new File("build/test-results/pdfs/minimal-invoice.xml"));
+      OutputStream outputStream = Files.newOutputStream(Path.of("build/test-results/pdfs/minimal-invoice.xml"));
       transformer.fromModel(invoice, outputStream); // <2>
    }
 

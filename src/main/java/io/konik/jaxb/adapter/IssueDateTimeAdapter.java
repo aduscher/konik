@@ -19,7 +19,7 @@ package io.konik.jaxb.adapter;
 
 import io.konik.util.Strings;
 
-import javax.xml.bind.annotation.adapters.XmlAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 

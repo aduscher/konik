@@ -20,7 +20,7 @@ package io.konik.jaxb.adapter;
 import io.konik.Configuration;
 import io.konik.zugferd.unqualified.Amount;
 
-import javax.xml.bind.annotation.adapters.XmlAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 

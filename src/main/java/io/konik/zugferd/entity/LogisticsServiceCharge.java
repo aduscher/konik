@@ -22,8 +22,8 @@ import io.konik.validator.annotation.NotBlank;
 import io.konik.zugferd.unqualified.Amount;
 
 import javax.validation.Valid;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlType;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;

@@ -20,7 +20,7 @@ package io.konik.jaxb.bindable.unqualified;
 import io.konik.zugferd.unqualified.ZfDate;
 import io.konik.zugferd.unqualified.ZfDateFactory;
 
-import javax.xml.bind.annotation.adapters.XmlAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 
 /**
  * = The Event to ZUGFeRD Date Adapter.

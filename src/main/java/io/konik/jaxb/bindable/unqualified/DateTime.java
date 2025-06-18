@@ -18,7 +18,7 @@
 
 package io.konik.jaxb.bindable.unqualified;
 
-import javax.xml.bind.annotation.*;
+import jakarta.xml.bind.annotation.*;
 
 /**
  * The bindable DateTime which is converted into ZfDate

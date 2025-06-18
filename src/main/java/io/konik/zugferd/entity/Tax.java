@@ -22,8 +22,8 @@ import io.konik.zugferd.unece.codes.TaxCategory;
 import io.konik.zugferd.unece.codes.TaxCode;
 
 import javax.validation.constraints.NotNull;
-import javax.xml.bind.annotation.XmlTransient;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlTransient;
+import jakarta.xml.bind.annotation.XmlType;
 import java.io.Serializable;
 import java.math.BigDecimal;
 

@@ -38,6 +38,8 @@ import javax.validation.Validator;
 import javax.validation.ValidatorFactory;
 import javax.xml.transform.stream.StreamSource;
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.Set;
 
 import static com.neovisionaries.i18n.CountryCode.DE;
@@ -49,7 +51,6 @@ import static io.konik.zugferd.unece.codes.Reference.FC;
 import static io.konik.zugferd.unece.codes.TaxCode.VAT;
 import static io.konik.zugferd.unece.codes.UnitOfMeasurement.UNIT;
 import static java.math.BigDecimal.valueOf;
-import static org.apache.commons.io.FileUtils.openOutputStream;
 import static org.apache.commons.lang3.time.DateUtils.addDays;
 import static org.apache.commons.lang3.time.DateUtils.addMonths;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -112,7 +113,7 @@ public class AllElementsInvoiceTest {
 
    public void transformModelAndWriteToDisk(Invoice invoice) throws IOException {
       PrittyPrintInvoiceTransformer transformer = new PrittyPrintInvoiceTransformer(); // <1>
-      FileOutputStream outputStream = openOutputStream(new File("build/test-results/zf-xml/all-element-invoice.xml"));
+      OutputStream outputStream = Files.newOutputStream(Path.of("build/test-results/zf-xml/all-element-invoice.xml"));
       transformer.fromModel(invoice, outputStream); // <2>
    }
 

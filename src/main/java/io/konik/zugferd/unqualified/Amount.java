@@ -20,9 +20,10 @@ package io.konik.zugferd.unqualified;
 import com.neovisionaries.i18n.CurrencyCode;
 
 import javax.validation.constraints.NotNull;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.XmlValue;
+import jakarta.xml.bind.annotation.XmlAttribute;
+import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlValue;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 

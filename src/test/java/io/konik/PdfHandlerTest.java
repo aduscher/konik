@@ -7,12 +7,12 @@ import org.apache.pdfbox.io.IOUtils;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.File;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ServiceLoader;
 
-import static org.apache.commons.io.FileUtils.openOutputStream;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SuppressWarnings("javadoc")
@@ -54,7 +54,7 @@ public class PdfHandlerTest {
    public void appendInvoice() throws Exception {
       Invoice invoice = new RandomInvoiceGenerator().generate(Invoice.class);
       InputStream inputPdf = getClass().getResourceAsStream("/Musterrechnung_Einfach_Basic.pdf");
-      OutputStream resultingPdf = openOutputStream(new File("build/test-results/pdfs/appendInvoiceTestResult.pdf"));
+      OutputStream resultingPdf = Files.newOutputStream(Path.of("build/test-results/pdfs/appendInvoiceTestResult.pdf"));
       pdfHandler.appendInvoice(invoice, inputPdf, resultingPdf);
    }
 

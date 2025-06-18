@@ -22,7 +22,7 @@ import io.konik.zugferd.profile.ConformanceLevel;
 import io.konik.zugferd.profile.Profile;
 import io.konik.zugferd.profile.ProfileVersion;
 
-import javax.xml.bind.annotation.adapters.XmlAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 import java.util.logging.Logger;
 
 import static java.util.logging.Level.WARNING;
